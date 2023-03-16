@@ -1,0 +1,58 @@
+body {
+    --bs-gutter-x: 5.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img {
+    width: 180px;
+    height: 190px;
+    object-fit: contain;
+    padding-bottom: 5px;
+}
+
+#friends {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 26px;
+    --bs-card-title-spacer-y: 0.5rem;
+    padding-bottom: 5rem;
+}
+
+.friend {
+    border: 2px solid rgb(24, 183, 223);
+    padding: 20px;
+}
+
+span {
+    font-size: 22px;
+    font-weight: 650;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 776px) {
+    #friends {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
